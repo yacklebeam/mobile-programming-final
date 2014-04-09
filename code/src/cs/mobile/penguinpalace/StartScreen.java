@@ -1,7 +1,6 @@
 package cs.mobile.penguinpalace;
 
 import cs.mobile.penguinpalace.util.SystemUiHider;
-
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.os.Build;
@@ -9,6 +8,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -114,7 +114,7 @@ public class StartScreen extends Activity {
 		// Upon interacting with UI controls, delay any scheduled hide()
 		// operations to prevent the jarring behavior of controls going away
 		// while interacting with the UI.
-		findViewById(R.id.dummy_button).setOnTouchListener(
+		findViewById(R.id.play_button).setOnTouchListener(
 				mDelayHideTouchListener);
 	}
 
@@ -139,6 +139,7 @@ public class StartScreen extends Activity {
 			if (AUTO_HIDE) {
 				delayedHide(AUTO_HIDE_DELAY_MILLIS);
 			}
+			Toast.makeText(getApplicationContext(), "GO GO GO GO GO", Toast.LENGTH_SHORT).show();
 			return false;
 		}
 	};
