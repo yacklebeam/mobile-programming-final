@@ -2,8 +2,12 @@
 <resources>
 
     <string name="app_name">IYF: Penguin Palace</string>
+    <string name="start_screen_content">IN YOUR FACE:\nPENGUIN PALACE</string>
     <string name="start_button_text">START GAME</string>
-    <string name="start_screen_content">IN YOUR FACE:\nPENGUIN PALACE!!1!1!</string>
     <string name="options_button_text">OPTIONS</string>
+    <string name="about_button_text">ABOUT</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 
 </resources>
